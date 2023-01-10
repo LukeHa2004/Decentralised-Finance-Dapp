@@ -70,17 +70,6 @@ module.exports = {
     path: path.join(__dirname, "dist", frontendDirectory),
   },
 
-  // Depending in the language or framework you are using for
-  // front-end development, add module loaders to the default
-  // webpack configuration. For example, if you are using React
-  // modules and CSS as described in the "Adding a stylesheet"
-  // tutorial, uncomment the following lines:
-  // module: {
-  //  rules: [
-  //    { test: /\.(ts|tsx|jsx)$/, loader: "ts-loader" },
-  //    { test: /\.css$/, use: ['style-loader','css-loader'] }
-  //  ]
-  // },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, asset_entry),
